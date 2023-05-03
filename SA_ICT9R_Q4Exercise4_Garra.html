@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+	<title>Q4 | Exercise 4</title>
+
+	<style type="text/css">
+       body {
+         font-family: Muli, sans-serif;
+         font-size: 16px;
+         background-image: url('pink bear.jpeg');
+         background-repeat: no-repeat;
+         background-size: 100% 400%;
+    }
+
+       h2 {
+         font-family: "Space Mono", monospace;
+         font-size: 46px;
+    }
+
+    form{
+    	background-color: #FFFFFF;
+    	font-size: 25px;
+    }
+
+    p{
+    	background-color: #FFFFFF;
+    }
+	</style>
+</head>
+<body>
+
+	<h2 style="background-color:#FFFFFF;">◤ Length Converter ◥</h2>
+
+	<form>
+		<label>Inches:</label>
+        <input id="inputInch" type="num"  
+        oninput="LengthConverter(this.value)" 
+        onchange="LengthConverter(this.value)">
+	</form>
+
+	<form>cm: <span id="outputcm"></span></form>
+
+    <script>
+    function LengthConverter(valNum) {
+    document.getElementById("outputcm").innerHTML=valNum/0.39370;
+    }
+    </script>
+</body>
+</html>
